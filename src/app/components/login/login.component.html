@@ -1,0 +1,55 @@
+<div id="login" class="container-fluid main_container text-white d-flex">
+
+    <div class="row flex-fill">
+        <div class="col-sm-6">
+            <img src="../../../assets/Carsarena-logos.jpeg" class="img-fluid" alt="Responsive image">
+        </div>
+
+        <div class="col-sm-6 h-100" style="background: white">
+            <div style="padding-top: 2.5%">
+
+            </div>
+            <div class="submit-form" style="padding-top: 5.5%">
+                <form class="form" style="font-size:14px;">
+                    <div *ngIf="submitted" class="alert alert-success" style="color: rgb(105, 236, 18)">
+                        <h6>{{msg}}</h6>
+                    </div>
+                    <div class="heading" style="color: rgb(236, 18, 182)">
+                        <strong>Login</strong>
+                    </div>
+
+                    <div class="form-floating mt-2 mb-2">
+                        <input type="text" class="form-control" id="phone" placeholder="Enter Mobile Number"
+                            name="phone" [(ngModel)]="user.phone" required>
+                        <label for="phone" style="color: rgb(18, 19, 19)"> Mobile Number </label>
+                    </div>
+                    <div class="form-floating mt-2 mb-2">
+                        <input type="password" class="form-control" id="pwd" placeholder="Enter Password"
+                            name="password" [(ngModel)]="user.password" required>
+                        <label for="pwd" style="color: rgb(18, 19, 19)"> Password </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something" checked>
+                        <label class="form-check-label" style="color:grey">I have read and accepted the <span class="spany">Terms & Conditions</span></label>
+                      </div>
+                      <div class="bt">
+                        <button (click)="saveUser();" class="btn">Login</button>
+                      </div>                    
+                      <div class="row" style="padding-top: 2%;">
+                        <div class="col-sm-6">
+                            <div class="forgo" style="padding-left: 4%; text-align: left;">
+                                <span style="color: black;">Don't have an account? </span> <span style="color: rgb(236, 18, 182);"> Register</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="forgo" style="color: rgb(236, 18, 182);  text-align: right;">
+                                Forgot password?
+                            </div>
+                        </div>
+                      </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
