@@ -1,0 +1,21 @@
+.btn{
+    padding-left: 45%;
+    padding-right: 49%;
+    background-color: rgb(236, 18, 182);
+}
+
+.forgo{
+    text-align: right;
+}
+.col-sm-6{
+    padding-left: 0%;
+}
+.form{
+    padding-top: 10%;
+}
+
+.heading{
+    text-align: center;
+    font-size: x-large;
+    padding-bottom: 5%;
+}
